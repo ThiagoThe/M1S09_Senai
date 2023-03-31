@@ -24,7 +24,7 @@ export const Formulario = ({ onSubmit }) => {
           aria-describedby="campo-adicionar-tarefa"
         />
         <button
-          class="btn btn-outline-primary bg-light"
+          className="btn btn-outline-primary bg-light"
           type="submit"
           id="button-addon2"
         >

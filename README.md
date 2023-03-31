@@ -5,7 +5,7 @@ Para utilizar este projeto como base, faça o seguinte passo-a-passo:
 - Clone o projeto para a sua máquina
 
 ```bash
-git clone https://github.com/ThiagoThe/M1S09_Senai.git.
+git clone git@github.com:FullStack-Itaguacu/m01s09-exercicios-todo-app.git .
 ```
 
 Obs: necessário configurar SSH [(veja como clicando aqui)](https://www.youtube.com/watch?v=n-H1eFSsugo)
@@ -28,4 +28,4 @@ Este projeto já vem com o Bootstrap 5 instalado e configurado.
 
 ### Autor
 
-[Thiago Pires]()
+[Prof. Mika](https://www.linkedin.com/in/michaelnsc/)
