@@ -5,18 +5,18 @@ export const Header = () => {
     <header className="header bg-body-secondary">
       <nav className="navbar navbar-expand-lg  container d-flex ">
         <span className="flex-grow-1">Tarefas.dev</span>
-        <ul class="navbar-nav ">
-          <li class="nav-item me-auto">
+        <ul className="navbar-nav ">
+          <li className="nav-item me-auto">
             <Link
-              class="nav-link active"
+              class Name="nav-link active"
               aria-current="page"
               to="/src/pages/Home.jsx"
             >
               Home
             </Link>
           </li>
-          <li class="nav-item">
-            <Link class="nav-link" to="/src/pages/QuemSou.jsx">
+          <li className="nav-item">
+            <Link className="nav-link" to="/src/pages/QuemSou.jsx">
               Quem sou
             </Link>
           </li>
