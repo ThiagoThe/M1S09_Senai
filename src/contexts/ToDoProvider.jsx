@@ -1,4 +1,6 @@
-import { useToDos } from "./contexts/useToDos";
+const { createContext } = require("react");
+
+export const todoContext = createContext();
 
 ToDoProvider = ({ children }) => {
   const [toDos, setToDos] = useState([
