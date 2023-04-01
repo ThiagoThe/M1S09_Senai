@@ -2,7 +2,7 @@ const { createContext } = require("react");
 
 export const todoContext = createContext();
 
-ToDoProvider = ({ children }) => {
+export const ToDoProvider = ({ children }) => {
   const [toDos, setToDos] = useState([
     { id: 1, text: "Estudar React", done: false },
     { id: 2, text: "Praticar com um projeto", done: true },
@@ -32,11 +32,11 @@ ToDoProvider = ({ children }) => {
   const pendingToDos = toDos.filter((todo) => !todo.done);
 
   return (
-    <todosContext.Provider
+    <todoContext.Provider
       value={{ addToDo, markTodo, completedToDos, pendingToDos }}
     >
       {children}
-    </todosContext.Provider>
+    </todoContext.Provider>
   );
 };
 
