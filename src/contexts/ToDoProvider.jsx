@@ -1,4 +1,4 @@
-const { createContext } = require("react");
+import { createContext, useState } from "react";
 
 export const todoContext = createContext();
 
@@ -31,10 +31,16 @@ export const ToDoProvider = ({ children }) => {
   const completedToDos = toDos.filter((todo) => todo.done);
   const pendingToDos = toDos.filter((todo) => !todo.done);
 
+  const contextValues = {
+    toDos,
+    addToDo,
+    markTodo,
+    completedToDos,
+    pendingToDos,
+  };
+
   return (
-    <todoContext.Provider
-      value={{ addToDo, markTodo, completedToDos, pendingToDos }}
-    >
+    <todoContext.Provider value={contextValues}>
       {children}
     </todoContext.Provider>
   );
